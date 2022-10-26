@@ -50,4 +50,3 @@ const listen = () => {
 };
 
 listen();
-console.log(btn.style.left);
