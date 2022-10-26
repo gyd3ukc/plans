@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwindConfig.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/switcher.css" />
+    <title>Document</title>
+  </head>
+  <body class="min-h-screen">
+    <header
+      class="flex justify-between mx-[16px] xl:mx-[50px] pt-[32px] xl:pt-[28px]"
+    >
+      <div class="grid content-center cursor-pointer">
+        <button>
+          <img src="./pictures/menuImg/menu.svg" alt="menu" />
+        </button>
+      </div>
+      <div class="flex items-center gap-[10px] cursor-pointer">
+        <img src="./pictures/logo/logo.svg" />
+        <h2 class="header-title">Jadwalin</h2>
+      </div>
+      <div class="hidden xl:block">
+        <button
+          class="w-[124px] h-[38px] bg-purple rounded-[25px] text-[14px] text-white font-medium"
+        >
+          Join now
+        </button>
+      </div>
+    </header>
+
+    <div class="mx-auto w-full max-w-[937px]">
+      <div class="xl:mb-[90px]">
+        <div class="mx-[16px] mt-[73px]">
+          <div>
+            <h2 class="text-[40px] text-dark-blue mb-[20px] xl:mb-[25px]">
+              Plans & Pricing
+            </h2>
+            <div
+              class="flex flex-col xl:flex-row xl:gap-[122px] xl:justify-between"
+            >
+              <h3 class="font-medium text-[18px] text-gray leading-[27px]">
+                Whether your time-saving automation needs are large or small,
+                we’re here to help you scale.
+              </h3>
+              <div class="my-[32px]">
+                <div class="button-box">
+                  <div id="btn" class="bg-purple"></div>
+                  <div
+                    class="w-full flex justify-around text-purple font-medium text-[12px]"
+                  >
+                    <button mounthly type="button" class="toggle-btn">
+                      MONTHLY
+                    </button>
+                    <button yearly type="button" class="toggle-btn">
+                      YEARLY
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="grid xl:grid-cols-3 bg-white rounded-[26px] px-[8px] xl:px-[45px] mx-[16px] xl:mx-0 xl:pb-[20px] xl:pt-[40px] mb-[64px] xl:mb-[69px]"
+      >
+        <div class="grid mx-[20px] mt-[32px] xl:my-0">
+          <div>
+            <p started class="text-dark-blue font-bold text-[36px]"></p>
+          </div>
+          <h3 class="mt-[20px] font-medium text-[28px] text-dark-blue">
+            Started
+          </h3>
+          <p class="my-[14px] text-[17px] text-gray font-medium">
+            Unleash the power of automation.
+          </p>
+          <div>
+            <ul class="text-[17px] text-gray font-medium">
+              <li class="flex">
+                <span
+                  class="w-[20px] h-[20px] bg-soft-gray rounded-xl relative mr-[10px]"
+                >
+                  <img
+                    src="./pictures/check_mark/check_mark.svg"
+                    alt="mark"
+                    class="absolute-centering"
+                  />
+                </span>
+                Multi-step Zaps
+              </li>
+              <li class="flex">
+                <span
+                  class="w-[20px] h-[20px] bg-soft-gray rounded-xl relative mr-[10px]"
+                >
+                  <img
+                    src="./pictures/check_mark/check_mark.svg"
+                    alt="mark"
+                    class="absolute-centering"
+                  /> </span
+                >3 Premium Apps
+              </li>
+              <li class="flex">
+                <span
+                  class="w-[20px] h-[20px] bg-soft-gray rounded-xl relative mr-[10px]"
+                >
+                  <img
+                    src="./pictures/check_mark/check_mark.svg"
+                    alt="mark"
+                    class="absolute-centering"
+                  /> </span
+                >2 Users team
+              </li>
+            </ul>
+          </div>
+          <button
+            class="justify-self-center w-full max-w-[232px] h-[45px] bg-dark-blue rounded-[24px] text-white mt-[38px]"
+          >
+            Choose plan
+          </button>
+        </div>
+
+        <div class="grid mx-[20px] my-[48px] xl:my-0">
+          <div>
+            <p professional class="text-dark-blue font-bold text-[36px]"></p>
+          </div>
+          <h3 class="mt-[20px] font-medium text-[28px] text-dark-blue">
+            Professional
+          </h3>
+          <p class="my-[14px] text-[17px] text-gray font-medium">
+            Advanced tools to take your work to the next level.
+          </p>
+          <div>
+            <ul class="text-[17px] text-gray font-medium">
+              <li class="flex">
+                <span
+                  class="w-[20px] h-[20px] bg-soft-gray rounded-xl relative mr-[10px]"
+                >
+                  <img
+                    src="./pictures/check_mark/check_mark.svg"
+                    alt="mark"
+                    class="absolute-centering"
+                  />
+                </span>
+                Multi-step Zaps
+              </li>
+              <li class="flex">
+                <span
+                  class="w-[20px] h-[20px] bg-soft-gray rounded-xl relative mr-[10px]"
+                >
+                  <img
+                    src="./pictures/check_mark/check_mark.svg"
+                    alt="mark"
+                    class="absolute-centering"
+                  /> </span
+                >Unlimited Premium
+              </li>
+              <li class="flex">
+                <span
+                  class="w-[20px] h-[20px] bg-soft-gray rounded-xl relative mr-[10px]"
+                >
+                  <img
+                    src="./pictures/check_mark/check_mark.svg"
+                    alt="mark"
+                    class="absolute-centering"
+                  /> </span
+                >50 Users team
+              </li>
+              <li class="flex">
+                <span
+                  class="w-[20px] h-[20px] bg-soft-gray rounded-xl relative mr-[10px]"
+                >
+                  <img
+                    src="./pictures/check_mark/check_mark.svg"
+                    alt="mark"
+                    class="absolute-centering"
+                  /> </span
+                >Shared Workspace
+              </li>
+            </ul>
+          </div>
+          <button
+            class="justify-self-center w-full max-w-[232px] h-[45px] bg-dark-blue rounded-[24px] text-white mt-[38px]"
+          >
+            Choose plan
+          </button>
+        </div>
+
+        <div
+          class="premium-box-shadow grid px-[20px] bg-dark-blue text-white rounded-[26px] mb-[8px] xl:my-0 relative"
+        >
+          <div
+            class="hidden xl:block xl:absolute bg-dark-blue w-full h-[127px] top-[-67px] rounded-[26px]"
+          ></div>
+          <div
+            class="justify-self-center bg-soft-purple w-[121px] h-[27px] rounded-[13.5px] my-[20px] relative xl:my-0 xl:right-[30px] xl:top-[-47px] xl:absolute"
+          >
+            <p
+              class="w-full text-center text-purple text-[10px] font-extrabold absolute-centering"
+            >
+              MOST POPULAR
+            </p>
+          </div>
+          <div class="z-10">
+            <p company class="font-bold text-[36px]"></p>
+          </div>
+          <h3 class="mt-[20px] font-medium text-[28px]">Company</h3>
+          <p class="my-[14px] text-[17px] font-medium">
+            Automation plus enterprise-grade features.
+          </p>
+          <div>
+            <ul class="text-[17px] font-medium">
+              <li class="flex">
+                <div class="grid w-[20px] h-[20px] relative mr-[10px]">
+                  <span class="w-full h-full bg-white opacity-10 rounded-xl">
+                  </span>
+                  <img
+                    src="./pictures/check_mark/check_mark_white.svg"
+                    alt="mark"
+                    class="absolute-centering"
+                  />
+                </div>
+                Multi-step Zaps
+              </li>
+              <li class="flex">
+                <div class="grid w-[20px] h-[20px] relative mr-[10px]">
+                  <span class="w-full h-full bg-white opacity-10 rounded-xl">
+                  </span>
+                  <img
+                    src="./pictures/check_mark/check_mark_white.svg"
+                    alt="mark"
+                    class="absolute-centering"
+                  />
+                </div>
+                Unlimited Premium
+              </li>
+              <li class="flex">
+                <div class="grid w-[20px] h-[20px] relative mr-[10px]">
+                  <span class="w-full h-full bg-white opacity-10 rounded-xl">
+                  </span>
+                  <img
+                    src="./pictures/check_mark/check_mark_white.svg"
+                    alt="mark"
+                    class="absolute-centering"
+                  />
+                </div>
+                Unlimited Users Team
+              </li>
+              <li class="flex">
+                <div class="grid w-[20px] h-[20px] relative mr-[10px]">
+                  <span class="w-full h-full bg-white opacity-10 rounded-xl">
+                  </span>
+                  <img
+                    src="./pictures/check_mark/check_mark_white.svg"
+                    alt="mark"
+                    class="absolute-centering"
+                  />
+                </div>
+                Advanced Admin
+              </li>
+              <li class="flex">
+                <div class="grid w-[20px] h-[20px] relative mr-[10px]">
+                  <span class="w-full h-full bg-white opacity-10 rounded-xl">
+                  </span>
+                  <img
+                    src="./pictures/check_mark/check_mark_white.svg"
+                    alt="mark"
+                    class="absolute-centering"
+                  />
+                </div>
+                Custom Data Retention
+              </li>
+            </ul>
+          </div>
+          <button
+            class="justify-self-center w-full max-w-[232px] h-[45px] bg-purple rounded-[24px] text-white mb-[20px] mt-[38px] bottom-0"
+          >
+            Choose plan
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
