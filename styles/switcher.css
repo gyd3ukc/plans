@@ -16,6 +16,7 @@
   width: 100%;
   position: relative;
   text-align: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #btn {
