@@ -6,6 +6,9 @@ const started = document.querySelector("[started]");
 const professional = document.querySelector("[professional]");
 const company = document.querySelector("[company]");
 
+const mounthly = "mounthly";
+const yearly = "yearly";
+
 const pattern = `$<span class="text-[17px] font-medium">/month</span>`;
 
 const plans = {
@@ -33,19 +36,27 @@ yearlyBtn.addEventListener("click", () => {
   listen();
 });
 
+const plan = (plan) => {
+  if (plan === "yearly") {
+    started.innerHTML = plans.started[plan] + pattern;
+    professional.innerHTML = plans.professional[plan] + pattern;
+    company.innerHTML = plans.company[plan] + pattern;
+  } else if (plan === "mounthly") {
+    started.innerHTML = plans.started[plan] + pattern;
+    professional.innerHTML = plans.professional[plan] + pattern;
+    company.innerHTML = plans.company[plan] + pattern;
+  }
+};
+
 const listen = () => {
   if (btn.style.left == "110px") {
     mounthlyBtn.style.color = "#3B3472";
     yearlyBtn.style.color = "white";
-    started.innerHTML = plans.started.yearly + pattern;
-    professional.innerHTML = plans.professional.yearly + pattern;
-    company.innerHTML = plans.company.yearly + pattern;
+    plan(yearly);
   } else {
     mounthlyBtn.style.color = "white";
     yearlyBtn.style.color = "#3B3472";
-    started.innerHTML = plans.started.mounthly + pattern;
-    professional.innerHTML = plans.professional.mounthly + pattern;
-    company.innerHTML = plans.company.mounthly + pattern;
+    plan(mounthly);
   }
 };
 
